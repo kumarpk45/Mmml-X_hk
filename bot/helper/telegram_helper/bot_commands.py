@@ -4,11 +4,11 @@ from bot import CMD_SUFFIX, config_dict
 class _BotCommands:
     def __init__(self):
         self.StartCommand = 'start'
-        self.MirrorCommand = [f'm{CMD_SUFFIX}', f'mirror{CMD_SUFFIX}']
-        self.QbMirrorCommand = [f'qbm{CMD_SUFFIX}', f'qbmirror{CMD_SUFFIX}']
-        self.YtdlCommand = [f'yt{CMD_SUFFIX}', f'ytdl{CMD_SUFFIX}']
-        self.LeechCommand = [f'l{CMD_SUFFIX}', f'leech{CMD_SUFFIX}']
-        self.QbLeechCommand = [f'qbl{CMD_SUFFIX}', f'qbleech{CMD_SUFFIX}']
+        self.MirrorCommand = [f'mirror{CMD_SUFFIX}', f'm{CMD_SUFFIX}']
+        self.QbMirrorCommand = [f'qbmirror{CMD_SUFFIX}', f'qbm{CMD_SUFFIX}']
+        self.YtdlCommand = [f'ytdl{CMD_SUFFIX}', f'yt{CMD_SUFFIX}']
+        self.LeechCommand = [f'leech{CMD_SUFFIX}', f'l{CMD_SUFFIX}']
+        self.QbLeechCommand = [f'qbleech{CMD_SUFFIX}', f'qbl{CMD_SUFFIX}']
         self.YtdlLeechCommand = [f'ytl{CMD_SUFFIX}', f'ytdlleech{CMD_SUFFIX}']
         if config_dict['SHOW_EXTRA_CMDS']:
             self.MirrorCommand.extend([f'uzm{CMD_SUFFIX}', f'unzipmirror{CMD_SUFFIX}', f'zm{CMD_SUFFIX}', f'zipmirror{CMD_SUFFIX}'])
